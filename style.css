@@ -1,0 +1,2515 @@
+*{
+    margin:0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+
+/*.img-content{
+    width: 100%;
+	height:80vh;
+	background:linear-gradient(
+		rgba(0, 0, 0, 0.2), 
+		rgba(0, 0, 0, 0.3)
+	),
+	no-repeat;
+	background-size: cover;
+	flex-direction: column;
+}*/
+
+.home-section{
+    width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgb(51, 17, 240)), url(imagenes/paralax4.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.banner-texto .profesion{
+    text-align: right;
+    color: #fff;
+    font-size: 0.1px;
+	margin-top: -20%;
+	letter-spacing: 1rem;
+    font-weight: 700;
+    margin-right: 23rem;
+	transition: 0.2s;
+	
+}
+.home-section .banner-texto .nombre{
+    text-align: right;
+    color: #fff;
+    font-size: 0.1px;
+	margin-bottom: 30%;
+	letter-spacing: 1rem;
+    font-weight: 700;
+    margin-right: 16rem;
+	transition:  0.2s;
+	
+}
+.home-section:hover .profesion{
+    font-size: 50px;
+	transition: 0.2s 0.2s;
+}
+.home-section:hover .nombre{
+    font-size: 50px;
+	transition: 0.2s 0.2s;
+}
+
+
+.container{
+	width: 99%;
+	height: 90vh;
+}
+.nav-principal{
+    text-align: end;
+    position: relative;
+	z-index: 300;
+}
+
+.nav-link{
+    font-size: 1rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	margin: 0 1rem;
+	letter-spacing: 0.1rem;
+	text-transform: uppercase;
+	position: relative;
+    transition: color 0.2s;
+    text-shadow: black;
+	transform: skew(-10deg);
+	
+}
+.nav-link:hover{
+	color: rgb(0, 0, 0);
+
+}
+
+.change.nav-link{
+	color: rgb(255, 255, 255);
+
+}
+
+.nav-link::before{
+	content: "";
+	width: 0;
+	height: 0.2rem;
+	background-color: rgb(0, 0, 0);
+	position: absolute;
+	right: -15%;
+	bottom: -0.3rem;
+	transition: width 0.2s;
+}
+
+.change.nav-link::before{
+	width: 130%;
+}
+
+.nav-link:hover::before{
+	width: 130%;
+
+}
+.home-section .imgess{
+    margin-top: 1rem;
+    margin-left: 48rem;
+    width: 400px;
+    height: 600px;
+	transition: 0.3s;
+	border-radius: 2rem;
+}
+
+.home-section:hover .imgess{
+    margin-left: 15rem;
+    transition: 0.3s;
+}
+
+
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+.paralax{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.226), rgb(62, 31, 235)), url(imagenes/paralax2.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.wrapper {
+	width: 0rem;
+	margin: 0 auto;
+	
+  }
+  
+  .wrapper::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+  
+  .skill-container {
+	margin-top: 2rem;
+	width: 60%;
+	
+	margin-left: 10rem;
+	margin-top: 2rem;
+	font-size: 2rem;
+  }
+  .skill-container:not(:last-child) {
+	margin-bottom: 2rem;
+  }
+  
+  .skillbar {
+	background-color: #dadada;
+	height: 4rem;
+	width: 100%;
+	border-radius: 10rem;
+	box-shadow: 0.2rem 0.2rem 0.2rem 0 rgba(255, 255, 255, 0.2);
+	position: relative;
+	overflow: hidden;
+	
+  }
+  
+  .html,
+  .php,
+  .js,
+  .css {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0%;
+	z-index: 1;
+	border-radius: 10rem;
+  }
+  
+  .htmlskill,
+  .phpskill,
+  .jsskill,
+  .cssskill {
+	font-size: 2rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 80%;
+	background-color: #1CB5E0;
+	z-index: 55;
+	transition: all 1s ease-in;
+	border-radius: 10rem;
+	box-shadow: 0.3rem 0.3rem 0.3rem 0 rgba(28, 181, 224, 0.35);
+  }
+  
+  .phpskill {
+	width: 70%;
+  }
+  
+  .jsskill {
+	width: 70%;
+  }
+  
+  .cssskill {
+	width: 60%;
+  }
+  
+  .percent {
+	float: right;
+	padding: 0.1rem 0.5rem 0.3rem 0;
+	color: #fff;
+	font-weight: 800;
+  }
+
+  .title{
+	  color: white;
+  }
+  
+
+.info-aboutme_left{
+    height: 100vh;
+	width: 50%;
+	float: left;
+	
+	
+}
+
+.aboutme-progresbar{
+    /*background: #3b83bd;*/
+    width: 50%;
+	height: 100vh;
+	float: left;
+}
+
+.progress-bar{
+	position: relative;
+	width: 70%;
+	display: flex;
+	margin: 20px 0;
+	padding: 24px 20px 28px;
+	/*background: linear-gradient(#616161 0%, #333 10%, #222);*/
+	border-radius: 8px;
+	overflow: hidden;
+	/*border: 2px solid #000;*/
+	transition: 0.5s;
+	margin-left: 30px;
+}
+
+.progress-bar::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	/*background: rgba(255, 255, 255, 1);*/
+	z-index: 10;
+}
+
+.progress-bar .name{
+	position: relative;
+	width: 110px;
+	text-align: left;
+	font-weight: 900;
+	text-shadow: rgba(0, 0, 0, 1);
+	font-size: larger;
+	color: rgb(0, 0, 0);
+	margin-top: -2px;
+	text-transform: uppercase;
+	margin-right: 20px;
+}
+.progress-bar .value{
+	position: absolute;
+	width: 40px;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	margin-top: -2px;
+	text-transform: uppercase;
+}
+
+.progress-bar .percent{
+	position: relative;
+	width: calc(100% - 150px);
+	height: 20px;
+	border-radius: 10px;
+	background: #151515;
+	box-shadow: inset 0 0 10px #000;
+	overflow: hidden;
+}
+
+/*.progress-bar .percent .progress{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0%;
+	height: 100%;
+	border-radius: 10px;
+	background: rgba(78, 42, 238, 0.726);
+	box-shadow: inset 0 0 2px #000;
+	animation: ani 7s ease-in-out forwards;
+}
+@keyframes ani{
+	from{
+		width: 0;
+	}
+}*/
+.progress{
+	width: 0;
+	height: 100%;
+	transition: width .5s .5s ease-in-out;
+}
+
+.info-aboutme_about{
+	/*background-color: ivory;*/
+	width: 100%;
+	margin-top: 10rem;
+	align-items: center;
+}
+
+.info-aboutme_title{
+	font-size: 50px;
+	text-align: center;
+	margin-right: 40px;
+	font-weight: 700;
+	text-shadow: 1px 1px 2px black;
+	margin-top: 10px;
+}
+
+.HV{
+	font-size: 40px;
+	color: white;
+	background-color: blue;
+	width: 40rem;
+	margin-left: 20rem;
+	height: 10vh;
+	border-radius: 20px;
+}
+.info-aboutme_about:hover .HV{
+	color: #000;
+}
+img{
+	width: 50%;
+	height: 50vh;
+	margin-right: 0;
+	border-radius: 100%;
+}
+.info-about_subskill{
+	margin-top: 150px;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.subskill{
+	text-align: center;
+}
+
+
+.subskill i{
+	font-size: 3rem;
+	color:  rgb(115, 90, 204);
+	margin-bottom: 2rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+
+
+.subskill h2{
+	font-size: 2rem;
+	font-weight: 700;
+	color: #fff;
+	background-color: rgb(115, 90, 204);
+	width: 15rem;
+	letter-spacing: 0.1rem;
+	transform: skew(-10deg);
+	box-shadow: 0.2rem 0.2rem #555;
+}
+
+
+.section-aboutme{
+	display: flex;
+	height: 100vh;
+}
+
+
+.seccion-3{
+	width: 100%;
+	height: 100vh;
+	padding:  5rem 0;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: none;
+}
+
+
+.fondox{
+	margin-left: 10rem;
+	width: 70%;
+	height: 100vh;
+	flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	margin-bottom: 0%;
+	border: none;
+	
+}
+
+.proyectos{
+	height: 40vh;
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	background-color: black#fff;
+	box-shadow: 0.3rem 0.3rem 0.5rem #777;
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 0.5s;
+	border: none;
+	
+}
+.proyectos{
+	border: none;
+}
+
+.proyectos:hover{
+	box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.432);
+}
+
+.texto-proyecto{
+	text-align: center;
+	letter-spacing: 0.1rem;
+	transition: top 0.3s;
+	position: absolute;
+	top: -10rem;
+	transition: top 0.3s;
+}
+
+.proyectos:hover .texto-proyecto{
+	top:5rem;
+	transition: top 0.3s 0.3s;
+}
+
+.nombre-proyecto{
+	font-size: 3rem;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	position: relative;
+}
+
+.tecnologias{
+	font-size: 1.8rem;
+	color: rgb(255, 255, 255);
+}
+
+.img-proyectos{
+	width: 40rem;
+	transition: opacity 0.3s;
+	border-radius: 0rem;
+	border: none;
+}
+
+.proyectos:hover .img-proyectos{
+	width: 40rem;
+	opacity: 0.1;
+}
+
+.linkk{
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.1rem;
+	border: 0.1rem solid black;
+	padding: 0 1rem;
+	background-color: transparent;
+	position: absolute;
+	bottom: -5rem;
+	transition: bottom 0.3s;
+	border-radius: 2rem;
+}
+
+.proyectos:hover .linkk{
+	bottom: 5rem;
+	background-color: blue;
+	transition: bottom 0.3s 0.3s;
+}
+
+.social{
+	margin-bottom: 5rem;
+	align-items: center;
+	background-color:rgb(115, 90, 204);
+	margin-left: 55rem;
+	
+}
+.social-link{
+	margin-left: 20%;
+	align-items: center;
+	margin: 0 2rem;
+	/*padding: 0.7rem;*/
+	background-color: rgb(115, 90, 204);
+	border-radius: 0.5rem;
+	display: inline-block;
+}
+
+.social-link i{
+	font-size: 3rem;
+	color: #fff;
+	
+}
+.copyright{
+	margin-top: -2rem;
+	
+	color: #aaa;
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	font-weight: 300;
+	text-align: center;
+}
+
+.foot{
+	
+	background-color: rgb(115, 90, 204);
+}
+
+
+
+
+@media (max-width: 400px){
+	.nav-link{
+		font-size: 2rem;
+		font-weight: 500;
+	}
+	.banner-texto .profesion{
+		margin-top: 20rem;
+		font-size: 40px;
+		font-weight: 700;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	.section-aboutme{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-aboutme_left{
+		width: 100%;
+		
+	}
+	.info-aboutme_about{
+		width: 30rem;
+	}
+	.skill-container{
+		justify-content: left;
+		align-items: inherit;
+		margin-right: 0rem;
+		margin-left: 8rem;
+		height: 8vh;
+	}
+	.html .htmlskill{
+		height: 1%;
+	}
+	.info-aboutme_title{
+		margin-left: 40%;
+		text-align: center;
+		font-size: 20px;
+	}
+	img{
+		margin-left: 4.5rem;
+		width: 100%;
+		height: 20vh;
+	}
+	.fondox{
+		height: 50vh;
+		align-items: center;
+		margin-right: 10rem;
+		margin-top: 25rem;
+	}
+	.proyectos{
+		height: 19vh;
+		float: left;
+		align-items: center;
+	}
+	.info-about_subskill{
+		margin-bottom: 2rem;
+		
+	}
+	.social{
+		margin-left: 12rem;
+		align-items: center;
+	}
+	.social-link{
+		margin-left: 0%;
+		margin-right: 10%;
+	}
+	.subskill i{
+		font-size: 3rem;
+		color:  rgb(115, 90, 204);
+		margin-bottom: 2rem;
+		text-shadow: 0.1rem 0.1rem 0.5rem #555;
+	}
+	.subskill h2{
+		font-size: 1rem;
+		color: #fff;
+		background-color: rgb(115, 90, 204);
+		width: 6rem;
+		letter-spacing: 0.1rem;
+		transform: skew(-10deg);
+		box-shadow: 0.2rem 0.2rem #555;
+	}
+	
+}
+
+
+
+
+
+@media(min-width: 400px) and (max-width: 550px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 30rem;
+		width: 100px;
+		height: 100px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 20rem;
+		transition: 0.3s;
+	}
+	.nav-principal{
+		margin-right: 3rem;
+	}
+	.nav-link{
+		font-size: 2rem;
+		font-weight: 500;
+	}
+	.banner-texto .profesion{
+		margin-top: 20rem;
+		font-size: 20px;
+		font-weight: 300;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	.section-aboutme{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-aboutme_left{
+		width: 100%;
+		
+	}
+	img{
+		
+		width: 100%;
+		height: 20vh;
+	}
+	.fondox{
+		height: 60vh;
+		align-items: center;
+		margin-right: 10rem;
+		margin-top: 25rem;
+	}
+	.proyectos{
+		width: 70%;
+		height: 20vh;
+		float: left;
+		align-items: center;
+		margin-left: 4rem;
+		
+	}
+	.info-about_subskill{
+		margin-bottom: 2rem;
+		
+	}
+	.social{
+		margin-left: 12rem;
+		align-items: center;
+	}
+	.social-link{
+		margin-left: 0%;
+		margin-right: 10%;
+	}
+}
+
+@media(min-width: 550px) and (max-width: 700px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 30rem;
+		width: 50px;
+		height: 50px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 20rem;
+		transition: 0.3s;
+	}
+
+	.animation-area{
+		height: 200vh;
+	}
+	
+	.nav-link{
+		font-size: 2rem;
+		font-weight: 500;
+	}
+	.banner-texto .profesion{
+		margin-top: 40rem;
+		font-size: 50px;
+		font-weight: 500;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	.section-aboutme{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-aboutme_left{
+		width: 100%;
+		
+	}
+	img{
+		
+		width: 100%;
+		height: 20vh;
+	}
+	.fondox{
+		height: 60vh;
+		align-items: center;
+		margin-top: 25rem;
+	}
+	.proyectos{
+		width: 70%;
+		height: 20vh;
+		float: left;
+		align-items: center;
+		margin-left: 4rem;
+		
+	}
+	.info-about_subskill{
+		margin-bottom: 2rem;
+		
+	}
+	.social{
+		margin-left: 12rem;
+		align-items: center;
+	}
+	.social-link{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+}
+@media(min-width: 700px) and (max-width: 850px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 30rem;
+		width: 50px;
+		height: 50px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 20rem;
+		transition: 0.3s;
+	}
+	.nav-principal{
+		align-items: center;
+		margin-right: 10rem;
+	}
+	.nav-link{
+		font-size: 20rem;
+		font-weight: 500;
+	}
+	.banner-texto .profesion{
+		margin-top: 40rem;
+		font-size: 50px;
+		font-weight: 500;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	.section-aboutme{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-aboutme_left{
+		width: 100%;
+		
+	}
+	img{
+		
+		width: 100%;
+		height: 20vh;
+	}
+	.fondox{
+		height: 60vh;
+		align-items: center;
+		
+		margin-top: 25rem;
+	}
+	.proyectos{
+		width: 70%;
+		height: 20vh;
+		float: left;
+		align-items: center;
+		margin-left: 4rem;
+		
+	}
+	.info-about_subskill{
+		margin-bottom: 2rem;
+		
+	}
+	.social{
+		margin-left: 20rem;
+		align-items: center;
+	}
+	.social-link{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+}
+
+@media(min-width: 850px) and (max-width: 1000px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 30rem;
+		width: 100px;
+		height: 100px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 20rem;
+		transition: 0.3s;
+	}
+	.nav-principal{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-link{
+		font-size: 2rem;
+		font-weight: 500;
+	}
+	.banner-texto .profesion{
+		margin-top: 40rem;
+		font-size: 50px;
+		font-weight: 500;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	.section-aboutme{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-aboutme_left{
+		width: 100%;
+		
+	}
+	img{
+		
+		width: 100%;
+		height: 20vh;
+	}
+	.fondox{
+		height: 60vh;
+		align-items: center;
+		
+		margin-top: 25rem;
+	}
+	.proyectos{
+		width: 70%;
+		height: 20vh;
+		float: left;
+		align-items: center;
+		margin-left: 4rem;
+		
+	}
+	.info-about_subskill{
+		margin-bottom: 2rem;
+		
+	}
+	.social{
+		margin-left: 20rem;
+		align-items: center;
+	}
+	.social-link{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media(min-width: 1000px) and (max-width: 1209px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 30rem;
+		width: 500px;
+		height: 300px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 20rem;
+		transition: 0.3s;
+	}
+	.nav-principal{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-link{
+		font-size: 2rem;
+		font-weight: 500;
+	}
+	.banner-texto .profesion{
+		margin-top: 40rem;
+		font-size: 50px;
+		font-weight: 500;
+		letter-spacing: 0;
+		text-align: center;
+	}
+	.section-aboutme{
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.info-aboutme_left{
+		width: 100%;
+		
+	}
+	img{
+		
+		width: 100%;
+		height: 20vh;
+	}
+	.fondox{
+		height: 60vh;
+		align-items: center;
+		
+		margin-top: 25rem;
+	}
+	.proyectos{
+		width: 70%;
+		height: 20vh;
+		float: left;
+		align-items: center;
+		margin-left: 4rem;
+		
+	}
+	.info-about_subskill{
+		margin-bottom: 2rem;
+		
+	}
+	.social{
+		margin-left: 20rem;
+		align-items: center;
+	}
+	.social-link{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+@media(max-height: 480px){
+  .nav-link{
+	  
+	  font-size: 10px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .skill-container{
+	  height: 15px;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+  
+.info-about_subskill .subskill{
+	margin-top: 0;
+}
+.subskill i{
+	font-size: 3rem;
+	color:  rgb(115, 90, 204);
+	margin-bottom: 2rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+.subskill h2{
+	font-size: 0.8rem;
+	color: #fff;
+	background-color: rgb(115, 90, 204);
+	width: 4rem;
+	letter-spacing: 0.1rem;
+	transform: skew(-10deg);
+	box-shadow: 0.2rem 0.2rem #555;
+}
+
+.fondox{
+	margin-top: 5rem;
+}
+
+
+}
+@media(min-width: 400px) and (max-height: 580px){
+	
+	
+  .nav-link{
+	  font-size: 10px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .skill-container{
+	  height: 15px;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+  
+.info-about_subskill .subskill{
+	margin-top: 0;
+}
+.subskill i{
+	font-size: 3rem;
+	color:  rgb(115, 90, 204);
+	margin-bottom: 2rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+.subskill h2{
+	font-size: 1rem;
+	color: #fff;
+	background-color: rgb(115, 90, 204);
+	width: 6rem;
+	letter-spacing: 0.1rem;
+	transform: skew(-10deg);
+	box-shadow: 0.2rem 0.2rem #555;
+}
+
+
+.fondox{
+	margin-top: 5rem;
+}
+.texto-proyecto{
+	text-align: center;
+	letter-spacing: 0.1rem;
+	transition: top 0.3s;
+	position: absolute;
+	top: -7rem;
+	transition: top 0.3s;
+}
+.proyectos:hover .texto-proyecto{
+	top:1rem;
+	transition: top 0.3s 0.3s;
+}
+
+.nombre-proyecto{
+	font-size: 2rem;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	position: relative;
+}
+
+.tecnologias{
+	font-size: 1rem;
+	color: rgb(255, 255, 255);
+	top: -10rem;
+}
+
+.img-proyectos{
+	width: 30rem;
+	transition: opacity 0.3s;
+	border-radius: 0rem;
+}
+
+.proyectos:hover .img-proyectos{
+	width: 40rem;
+	opacity: 0.1;
+}
+
+.linkk{
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.1rem;
+	border: 0.3rem solid black;
+	padding: 0 1rem;
+	background-color: #fff;
+	position: absolute;
+	bottom: -8rem;
+	transition: bottom 0.3s;
+}
+
+.proyectos:hover .linkk{
+	bottom: 2rem;
+	background-color: blue;
+	transition: bottom 0.3s 0.3s;
+}
+
+}
+
+@media(min-width: 320px) and (max-height: 850px) and (max-width: 600px){
+	
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 15rem;
+		width: 200px;
+    	height: 300px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 8rem;
+		transition: 0.3s;
+	}
+	.home-section .banner-texto .nombre{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-bottom: 30%;
+		font-weight: 700;
+		margin-right: 3rem;
+		transition:  0.2s;
+	}
+	.banner-texto .profesion{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-top: -1%;
+		letter-spacing: 1rem;
+		font-weight: 700;
+		margin-right: 2rem;
+		transition: 0.2s;
+		
+	}
+	.home-section:hover .profesion{
+		font-size: 15px;
+		transition: 0.2s 0.2s;
+		margin-top: 5rem;
+	}
+	.home-section:hover .nombre{
+		font-size: 14px;
+		transition: 0.2s 0.2s;
+		margin-top: 4rem;
+	}
+	
+	.animation-area{
+		background: linear-gradient(to left, #302de698, #3747da);
+		width: 100%;
+		height: 100vh;
+		border-radius: 2rem;
+	}
+  .nav-link{
+	  font-size: 10px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .skill-container{
+	  height: 15px;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+.info-aboutme_title{
+	margin-left: 4rem;
+}
+img{
+	margin-left: 4rem;
+	width: 85%;
+	
+}
+  
+.info-about_subskill .subskill{
+	margin-top: 0;
+}
+.subskill i{
+	font-size: 3rem;
+	color:  rgb(115, 90, 204);
+	margin-bottom: 2rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+.subskill h2{
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: rgb(115, 90, 204);
+	width: 6rem;
+	letter-spacing: 0.1rem;
+	transform: skew(-10deg);
+	box-shadow: 0.2rem 0.2rem #555;
+}
+
+.fondox{
+	margin-top: 10rem;
+}
+.texto-proyecto{
+	text-align: center;
+	letter-spacing: 0.1rem;
+	transition: top 0.3s;
+	position: absolute;
+	top: -7rem;
+	transition: top 0.3s;
+}
+.proyectos:hover .texto-proyecto{
+	top:1rem;
+	transition: top 0.3s 0.3s;
+}
+.info-aboutme_about{
+	margin-top: 2rem;
+}
+.HV{
+	font-size: 20px;
+	color: white;
+	background-color: blue;
+	margin-left: 10rem;
+	border-radius: 20px;
+}
+.nombre-proyecto{
+	font-size: 2rem;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	position: relative;
+}
+
+.tecnologias{
+	font-size: 1rem;
+	color: rgb(255, 255, 255);
+	top: -10rem;
+}
+
+.img-proyectos{
+	width: 40rem;
+	transition: opacity 0.3s;
+	border-radius: 0rem;
+}
+
+.proyectos:hover .img-proyectos{
+	width: 40rem;
+	opacity: 0.1;
+}
+
+.linkk{
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.1rem;
+	border: 0.3rem solid black;
+	padding: 0 1rem;
+	background-color: #fff;
+	position: absolute;
+	bottom: -6rem;
+	transition: bottom 0.3s;
+}
+
+.proyectos:hover .linkk{
+	bottom: 2rem;
+	transition: bottom 0.3s 0.3s;
+}
+.proyectos{
+	border: none;
+}
+
+
+}
+
+@media(min-width: 600px) and (max-height: 1100px) and (max-width: 900px){
+	
+	
+  .nav-link{
+	  margin-left: 0.5rem;
+	  font-size: 25px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .skill-container{
+	  height: 15px;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+.info-aboutme_about{
+	margin-top: 2rem;
+}
+.info-about_subskill .subskill{
+	margin-top: 0;
+}
+img{
+	margin-left: 7rem;
+	width: 80%;
+}
+.home-section .imgess{
+    margin-top: 10rem;
+    margin-left: 30rem;
+    width: 400px;
+    height: 600px;
+    border-radius: 20rem;
+    transition: 0.3s;
+}
+.home-section:hover .imgess{
+    margin-left: 20rem;
+    transition: 0.3s;
+}
+.HV{
+	font-size: 50px;
+	color: white;
+	background-color: blue;
+	margin-left: 20rem;
+	border-radius: 20px;
+}
+.banner-texto .profesion{
+    text-align: right;
+    color: #fff;
+    font-size: 0.1px;
+	margin-top: 10%;
+	letter-spacing: 1rem;
+    font-weight: 700;
+    margin-right: 15rem;
+	transition: 0.2s;
+	
+}
+.home-section .banner-texto .nombre{
+    text-align: right;
+    color: #fff;
+    font-size: 0.1px;
+	margin-bottom: 30%;
+	letter-spacing: 1rem;
+    font-weight: 700;
+    margin-right: 15rem;
+	transition:  0.2s;
+	
+}
+.home-section:hover .profesion{
+    font-size: 40px;
+	transition: 0.2s 0.2s;
+}
+.home-section:hover .nombre{
+	font-size: 30px;
+	margin-left: 1rem;
+	transition: 0.2s 0.2s;
+}
+.subskill i{
+	font-size: 5rem;
+	color:  rgb(115, 90, 204);
+	margin-bottom: 2rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+.subskill h2{
+	font-size: 3rem;
+	color: #fff;
+	background-color: rgb(115, 90, 204);
+	width: 15rem;
+	letter-spacing: 0.1rem;
+	transform: skew(-10deg);
+	box-shadow: 0.2rem 0.2rem #555;
+}
+
+
+.fondox{
+	margin-top: 10rem;
+	border: none;
+	
+}
+.texto-proyecto{
+	text-align: center;
+	letter-spacing: 0.1rem;
+	transition: top 0.3s;
+	position: absolute;
+	top: -7rem;
+	transition: top 0.3s;
+}
+.proyectos:hover .texto-proyecto{
+	top:1rem;
+	transition: top 0.3s 0.3s;
+}
+
+.nombre-proyecto{
+	font-size: 4rem;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	position: relative;
+}
+
+.tecnologias{
+	font-size: 2rem;
+	color: rgb(255, 255, 255);
+	top: -10rem;
+}
+
+.img-proyectos{
+	width: 35rem;
+	transition: opacity 0.3s;
+	border: none;
+}
+
+.proyectos:hover .img-proyectos{
+	width: 40rem;
+	opacity: 0.1;
+}
+
+.linkk{
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.1rem;
+	border: 0.3rem solid black;
+	padding: 0 1rem;
+	background-color: #fff;
+	position: absolute;
+	bottom: -3rem;
+	transition: bottom 0.3s;
+}
+
+.proyectos:hover .linkk{
+	bottom: 2rem;
+	background-color: blue;
+	transition: bottom 0.3s 0.3s;
+}
+.proyectos{
+	border: none;
+}
+
+
+
+}
+@media(min-width: 800px) and (max-height: 1400px) and (max-width: 1200px){
+	
+	
+	.nav-link{
+		margin-left: 0.5rem;
+		font-size: 25px;
+	}
+	.banner-texto .texto-home{
+		font-size: 40px;
+		margin-top: 90px;
+	}
+	
+  img{
+	  margin-left: 7rem;
+	  width: 80%;
+  }
+  .home-section .imgess{
+	  margin-top: 10rem;
+	  margin-left: 30rem;
+	  width: 500px;
+	  height: 600px;
+	  border-radius: 20rem;
+	  transition: 0.3s;
+  }
+  .home-section:hover .imgess{
+	  margin-left: 20rem;
+	  transition: 0.3s;
+  }
+  .HV{
+	  font-size: 50px;
+	  color: white;
+	  background-color: blue;
+	  margin-left: 36rem;
+	  border-radius: 20px;
+  }
+  .banner-texto .profesion{
+	  text-align: right;
+	  color: #fff;
+	  font-size: 0.1px;
+	  margin-top: 10%;
+	  letter-spacing: 1rem;
+	  font-weight: 700;
+	  margin-right: 25rem;
+	  transition: 0.2s;
+	  
+  }
+  .home-section .banner-texto .nombre{
+	  text-align: right;
+	  color: #fff;
+	  font-size: 0.1px;
+	  margin-bottom: 30%;
+	  letter-spacing: 1rem;
+	  font-weight: 700;
+	  margin-right: 20rem;
+	  transition:  0.2s;
+	  
+  }
+  .home-section:hover .profesion{
+	  font-size: 50px;
+	  transition: 0.2s 0.2s;
+  }
+  .home-section:hover .nombre{
+	  font-size: 50px;
+	  margin-left: 1rem;
+	  margin-top: 3rem;
+	  transition: 0.2s 0.2s;
+  }
+  .subskill i{
+	  font-size: 5rem;
+	  color:  rgb(115, 90, 204);
+	  margin-bottom: 2rem;
+	  text-shadow: 0.1rem 0.1rem 0.5rem #555;
+  }
+  .subskill h2{
+	  font-size: 3rem;
+	  color: #fff;
+	  background-color: rgb(115, 90, 204);
+	  width: 15rem;
+	  letter-spacing: 0.1rem;
+	  transform: skew(-10deg);
+	  box-shadow: 0.2rem 0.2rem #555;
+  }
+  
+  
+  .fondox{
+	  margin-top: 10rem;
+	  border: none;
+	  
+  }
+  .texto-proyecto{
+	  text-align: center;
+	  letter-spacing: 0.1rem;
+	  transition: top 0.3s;
+	  position: absolute;
+	  top: -7rem;
+	  transition: top 0.3s;
+  }
+  .proyectos:hover .texto-proyecto{
+	  top:1rem;
+	  transition: top 0.3s 0.3s;
+  }
+  
+  .nombre-proyecto{
+	  font-size: 4rem;
+	  font-weight: 700;
+	  color: rgb(255, 255, 255);
+	  text-transform: capitalize;
+	  position: relative;
+  }
+  
+  .tecnologias{
+	  font-size: 2rem;
+	  color: rgb(255, 255, 255);
+	  top: -10rem;
+  }
+  
+  .img-proyectos{
+	  width: 35rem;
+	  transition: opacity 0.3s;
+	  border-radius: 0rem;
+	  border: none;
+  }
+  
+  .proyectos:hover .img-proyectos{
+	  width: 40rem;
+	  opacity: 0.1;
+  }
+  
+  .linkk{
+	  font-size: 2rem;
+	  font-weight: 500;
+	  color: rgb(255, 255, 255);
+	  letter-spacing: 0.1rem;
+	  border: 0.3rem solid black;
+	  padding: 0 1rem;
+	  background-color: #fff;
+	  position: absolute;
+	  bottom: -3rem;
+	  transition: bottom 0.3s;
+  }
+  
+  .proyectos:hover .linkk{
+	  bottom: 2rem;
+	  background-color: blue;
+	  transition: bottom 0.3s 0.3s;
+  }
+  .proyectos{
+	border: none;
+}
+
+  
+  
+  }
+
+
+  @media(min-width: 500px) and (max-height: 700px) and (max-width: 1000px){
+	.nav-link{
+		margin-left: 0.5rem;
+		font-size: 15px;
+	}
+	.banner-texto .texto-home{
+		font-size: 40px;
+		margin-top: 90px;
+	}
+	.skill-container{
+		height: 15px;
+	}
+	.skill-container .title{
+		font-size: 20px;
+	}
+	.skill-container .skillbar{
+		height: 10px;
+	}
+	 .html .percent{
+		 font-size: 0px;
+	 }
+	 .css .percent{
+	  font-size: 0px;
+  }
+  .php .percent{
+	  font-size: 0px;
+  }
+  .js .percent{
+	  font-size: 0px;
+  }
+  .info-aboutme_about{
+	  margin-top: 2rem;
+  }
+  .info-about_subskill .subskill{
+	  margin-top: 0;
+  }
+  img{
+	  margin-left: 7rem;
+	  width: 80%;
+  }
+  .home-section .imgess{
+	  margin-top: 10rem;
+	  margin-left: 30rem;
+	  width: 300px;
+	  height: 250px;
+	  border-radius: 20rem;
+	  transition: 0.3s;
+  }
+  .home-section:hover .imgess{
+	  margin-left: 20rem;
+	  transition: 0.3s;
+  }
+  .HV{
+	  font-size: 30px;
+	  color: white;
+	  background-color: blue;
+	  margin-left: 20rem;
+	  border-radius: 20px;
+	  
+  }
+  .banner-texto .profesion{
+	  text-align: right;
+	  color: #fff;
+	  font-size: 0.1px;
+	  margin-top: 10%;
+	  letter-spacing: 1rem;
+	  font-weight: 700;
+	  margin-right: 15rem;
+	  transition: 0.2s;
+	  
+  }
+  .home-section .banner-texto .nombre{
+	  text-align: right;
+	  color: #fff;
+	  font-size: 0.1px;
+	  margin-bottom: 30%;
+	  letter-spacing: 1rem;
+	  font-weight: 700;
+	  margin-right: 15rem;
+	  transition:  0.2s;
+	  
+  }
+  .home-section:hover .profesion{
+	  font-size: 25px;
+	  transition: 0.2s 0.2s;
+  }
+  .home-section:hover .nombre{
+	  font-size: 20px;
+	  margin-left: 1rem;
+	  transition: 0.2s 0.2s;
+  }
+  .subskill i{
+	  font-size: 4rem;
+	  color:  rgb(115, 90, 204);
+	  margin-bottom: 2rem;
+	  text-shadow: 0.1rem 0.1rem 0.5rem #555;
+  }
+  .subskill h2{
+	  font-size: 1rem;
+	  color: #fff;
+	  background-color: rgb(115, 90, 204);
+	  width: 10rem;
+	  letter-spacing: 0.1rem;
+	  transform: skew(-10deg);
+	  box-shadow: 0.2rem 0.2rem #555;
+  }
+  
+  
+  .fondox{
+	  margin-top: 8rem;
+	  border: none;
+	  
+  }
+  .texto-proyecto{
+	  text-align: center;
+	  letter-spacing: 0.1rem;
+	  transition: top 0.3s;
+	  position: absolute;
+	  top: -7rem;
+	  transition: top 0.3s;
+  }
+  .proyectos:hover .texto-proyecto{
+	  top:1rem;
+	  transition: top 0.3s 0.3s;
+  }
+  
+  .nombre-proyecto{
+	  font-size: 2rem;
+	  font-weight: 700;
+	  color: rgb(255, 255, 255);
+	  text-transform: capitalize;
+	  position: relative;
+  }
+  
+  .tecnologias{
+	  font-size: 1rem;
+	  color: rgb(252, 252, 252);
+	  top: -20rem;
+  }
+  
+  .img-proyectos{
+	  width: 35rem;
+	  transition: opacity 0.3s;
+	  border-radius: 0rem;
+	  border: none;
+  }
+  
+  .proyectos:hover .img-proyectos{
+	  width: 40rem;
+	  opacity: 0.1;
+  }
+  
+  .linkk{
+	  font-size: 2rem;
+	  font-weight: 500;
+	  color: rgb(255, 255, 255);
+	  letter-spacing: 0.1rem;
+	  border: 0.3rem solid black;
+	  padding: 0 1rem;
+	  position: absolute;
+	  bottom: -3rem;
+	  transition: bottom 0.3s;
+  }
+  
+  .proyectos:hover .linkk{
+	  bottom: 2rem;
+	  background-color: blue;
+	  transition: bottom 0.3s 0.3s;
+  }
+  .proyectos{
+	border: none;
+}
+
+}
+@media(min-height: 400px) and (max-width: 600px) and (max-height: 600px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 15rem;
+		width: 200px;
+    	height: 150px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 8rem;
+		transition: 0.3s;
+	}
+	.home-section .banner-texto .nombre{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-bottom: 30%;
+		font-weight: 700;
+		margin-right: 3rem;
+		transition:  0.2s;
+	}
+	.banner-texto .profesion{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-top: -1%;
+		letter-spacing: 1rem;
+		font-weight: 700;
+		margin-right: 2rem;
+		transition: 0.2s;
+		
+	}
+	.home-section:hover .profesion{
+		font-size: 15px;
+		transition: 0.2s 0.2s;
+		margin-top: 5rem;
+	}
+	.home-section:hover .nombre{
+		font-size: 14px;
+		transition: 0.2s 0.2s;
+		margin-top: 4rem;
+	}
+	
+	
+  .nav-link{
+	  font-size: 10px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .wrapper{
+	  margin-top: 3rem;
+  }
+  .skill-container{
+	  margin-top: 3rem;
+	  height: 10px;
+	  width: 70%;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+.info-aboutme_title{
+	margin-left: 4rem;
+}
+img{
+	margin-left: 4rem;
+	width: 85%;
+}
+.info-about_subskill{
+	margin-top: 20px;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.fondox{
+	
+	width:60%;
+	height: 100vh;
+	flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	margin-top: -7rem;
+	border: none;
+	
+}
+}
+@media(min-height: 400px) and (min-width: 600px) and (max-width: 800px) and (max-height: 600px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 15rem;
+		width: 200px;
+    	height: 200px;
+		border-radius: 20rem;
+		transition: 0.3s;
+	}
+	.home-section:hover .imgess{
+		margin-left: 8rem;
+		transition: 0.3s;
+	}
+	.home-section .banner-texto .nombre{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-bottom: 30%;
+		font-weight: 700;
+		margin-right: 3rem;
+		transition:  0.2s;
+	}
+	.banner-texto .profesion{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-top: -1%;
+		letter-spacing: 1rem;
+		font-weight: 700;
+		margin-right: 2rem;
+		transition: 0.2s;
+		
+	}
+	.home-section:hover .profesion{
+		font-size: 25px;
+		transition: 0.2s 0.2s;
+		margin-top: 5rem;
+	}
+	.home-section:hover .nombre{
+		font-size: 20px;
+		transition: 0.2s 0.2s;
+		margin-top: 4rem;
+	}
+	
+	
+  .nav-link{
+	  font-size: 10px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .wrapper{
+	  margin-top: 3rem;
+  }
+  .skill-container{
+	  margin-top: 3rem;
+	  height: 10px;
+	  width: 70%;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+.info-aboutme_title{
+	margin-left: 4rem;
+}
+img{
+	margin-left: 4rem;
+	width: 85%;
+}
+.info-about_subskill{
+	margin-top: 20px;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.fondox{
+	
+	width:70%;
+	height: 100vh;
+	flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	margin-top: -7rem;
+	border: none;
+	
+}
+.proyectos{
+	height: 40vh;
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	background-color: black#fff;
+	box-shadow: 0.3rem 0.3rem 0.5rem #777;
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 0.5s;
+	border: none;
+	
+}
+}
+@media(min-height: 400px) and (min-width: 800px) and (max-width: 1000px) and (max-height: 600px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 15rem;
+		width: 200x;
+    	height: 200px;
+		border-radius: 20rem;
+		transition: 0.3s;
+		border: solid black;
+	}
+	.home-section:hover .imgess{
+		margin-left: 8rem;
+		transition: 0.3s;
+	}
+	.home-section .banner-texto .nombre{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-bottom: 50%;
+		font-weight: 700;
+		margin-right: 3rem;
+		transition:  0.2s;
+	}
+	.banner-texto .profesion{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-top: -20%;
+		letter-spacing: 1rem;
+		font-weight: 700;
+		margin-right: 2rem;
+		transition: 0.2s;
+		
+	}
+	.home-section:hover .profesion{
+		font-size: 25px;
+		transition: 0.2s 0.2s;
+		margin-top: -10rem;
+	}
+	.home-section:hover .nombre{
+		font-size: 20px;
+		transition: 0.2s 0.2s;
+		margin-top: 2rem;
+	}
+	
+	
+  .nav-link{
+	  font-size: 20px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .wrapper{
+	  margin-top: 3rem;
+  }
+  .skill-container{
+	  margin-top: 3rem;
+	  height: 10px;
+	  width: 70%;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+.info-aboutme_title{
+	margin-left: 4rem;
+}
+img{
+	margin-left: 4rem;
+	width: 85%;
+}
+.info-about_subskill{
+	margin-top: 20px;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.fondox{
+	
+	width:70%;
+	height: 100vh;
+	flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	margin-top: -7rem;
+	border: none;
+	
+}
+.proyectos{
+	height: 40vh;
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	background-color: black#fff;
+	box-shadow: 0.3rem 0.3rem 0.5rem #777;
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 0.5s;
+	border: none;
+	
+}
+}
+@media(min-height: 400px) and (min-width: 1000px) and (max-width: 1250px) and (max-height: 600px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 15rem;
+		width: 200x;
+    	height: 200px;
+		border-radius: 20rem;
+		transition: 0.3s;
+		border: solid black;
+	}
+	.home-section:hover .imgess{
+		margin-left: 8rem;
+		transition: 0.3s;
+	}
+	.home-section .banner-texto .nombre{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-bottom: 50%;
+		font-weight: 700;
+		margin-right: 3rem;
+		transition:  0.2s;
+	}
+	.banner-texto .profesion{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-top: -20%;
+		letter-spacing: 1rem;
+		font-weight: 700;
+		margin-right: 2rem;
+		transition: 0.2s;
+		
+	}
+	.home-section:hover .profesion{
+		font-size: 25px;
+		transition: 0.2s 0.2s;
+		margin-top: -10rem;
+	}
+	.home-section:hover .nombre{
+		font-size: 20px;
+		transition: 0.2s 0.2s;
+		margin-top: 2rem;
+	}
+	
+	
+  .nav-link{
+	  font-size: 20px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .wrapper{
+	  margin-top: 3rem;
+  }
+  .skill-container{
+	  margin-top: 3rem;
+	  height: 10px;
+	  width: 70%;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+.info-aboutme_title{
+	margin-left: 4rem;
+}
+img{
+	margin-left: 4rem;
+	width: 85%;
+}
+.info-about_subskill{
+	margin-top: 20px;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.seccion-3{
+	border: none;
+}
+.section-aboutme{
+	border: none;
+}
+.fondox{
+	
+	width:70%;
+	height: 100vh;
+	flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	margin-top: -7rem;
+	border: none;
+	
+}
+.proyectos{
+	height: 40vh;
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	background-color: black#fff;
+	box-shadow: 0.3rem 0.3rem 0.5rem #777;
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 0.5s;
+	border: none;
+	
+}
+}
+@media(min-height: 400px) and (min-width: 1250px) and (max-width: 1600px) and (max-height: 600px){
+	.home-section .imgess{
+		margin-top: 10rem;
+		margin-left: 15rem;
+		width: 250x;
+    	height: 250px;
+		border-radius: 20rem;
+		transition: 0.3s;
+		
+	}
+	.home-section:hover .imgess{
+		margin-left: 8rem;
+		transition: 0.3s;
+	}
+	.home-section .banner-texto .nombre{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-bottom: 50%;
+		font-weight: 700;
+		margin-right: 3rem;
+		transition:  0.2s;
+	}
+	.banner-texto .profesion{
+		text-align: right;
+		color: #fff;
+		font-size: 0.1px;
+		margin-top: -20%;
+		letter-spacing: 1rem;
+		font-weight: 700;
+		margin-right: 2rem;
+		transition: 0.2s;
+		
+	}
+	.home-section:hover .profesion{
+		font-size: 25px;
+		transition: 0.2s 0.2s;
+		margin-top: -10rem;
+	}
+	.home-section:hover .nombre{
+		font-size: 20px;
+		transition: 0.2s 0.2s;
+		margin-top: 2rem;
+	}
+	
+	
+  .nav-link{
+	  font-size: 20px;
+  }
+  .banner-texto .texto-home{
+	  font-size: 40px;
+	  margin-top: 90px;
+  }
+  .wrapper{
+	  margin-top: 3rem;
+  }
+  .skill-container{
+	  margin-top: 3rem;
+	  height: 10px;
+	  width: 70%;
+  }
+  .skill-container .title{
+	  font-size: 20px;
+  }
+  .skill-container .skillbar{
+	  height: 10px;
+  }
+   .html .percent{
+	   font-size: 0px;
+   }
+   .css .percent{
+	font-size: 0px;
+}
+.php .percent{
+	font-size: 0px;
+}
+.js .percent{
+	font-size: 0px;
+}
+.info-aboutme_title{
+	margin-left: 4rem;
+}
+img{
+	margin-left: 4rem;
+	width: 85%;
+}
+.info-about_subskill{
+	margin-top: 20px;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.seccion-3{
+	border: none;
+}
+.section-aboutme{
+	border: none;
+}
+.fondox{
+	
+	width:70%;
+	height: 100vh;
+	flex-wrap: wrap;
+	display: flex;
+	align-content: center;
+	text-align: center;
+	margin-top: -7rem;
+	border: none;
+	
+}
+.proyectos{
+	height: 40vh;
+	display: flex;
+	flex-direction: column ;
+	justify-content: center;
+	align-items: center;
+	margin: 1rem;
+	background-color: black#fff;
+	box-shadow: 0.3rem 0.3rem 0.5rem #777;
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 0.5s;
+	border: none;
+	
+}
+.proyectos{
+	border: none;
+}
+
+.proyectos:hover{
+	box-shadow: 1rem 1rem 1rem rgba(255, 255, 255, 0.432);
+}
+
+.texto-proyecto{
+	text-align: center;
+	letter-spacing: 0.1rem;
+	transition: top 0.3s;
+	position: absolute;
+	top: -10rem;
+	transition: top 0.3s;
+}
+
+.proyectos:hover .texto-proyecto{
+	top:5rem;
+	transition: top 0.3s 0.3s;
+}
+
+.nombre-proyecto{
+	font-size: 3rem;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	text-transform: capitalize;
+	position: relative;
+}
+
+.tecnologias{
+	font-size: 1.8rem;
+	color: rgb(255, 255, 255);
+}
+
+.img-proyectos{
+	width: 40rem;
+	transition: opacity 0.3s;
+	border-radius: 0rem;
+	border: none;
+}
+
+.proyectos:hover .img-proyectos{
+	width: 40rem;
+	opacity: 0.1;
+}
+
+.linkk{
+	font-size: 2rem;
+	font-weight: 500;
+	color: rgb(255, 255, 255);
+	letter-spacing: 0.1rem;
+	border: 0.1rem solid black;
+	padding: 0 1rem;
+	background-color: transparent;
+	position: absolute;
+	bottom: -5rem;
+	transition: bottom 0.3s;
+	border-radius: 2rem;
+}
+
+.proyectos:hover .linkk{
+	bottom: 5rem;
+	background-color: blue;
+	transition: bottom 0.3s 0.3s;
+}
+}
